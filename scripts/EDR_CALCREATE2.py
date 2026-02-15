@@ -37,7 +37,7 @@ def pull_events():
     sql = """
     SELECT event_title, start_time, end_time, event_loc
 	FROM prd.edr_calevents
-	WHERE event_desc NOT LIKE '%CANCELED%'
+	WHERE status = 'active'
 	"""
 
     with psycopg2.connect(**DB_PARAMS) as home:

@@ -4,7 +4,7 @@
 # and files in /etc/cron.d. These files also have username fields,
 # that none of the other crontabs do.
 
-SHELL=/bin/sh
+SHELL=/bin/bash
 # You can also override PATH, but by default, newer versions inherit it from the environment
 #PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 

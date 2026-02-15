@@ -15,7 +15,7 @@ DESTINATION="$PUNT_DESTINATION"
 if [ -f "$SOURCE_FILE" ]; then
     echo "Found $SOURCE_FILE. Starting transfer..."
 
-    rsync -avz "$SOURCE_FILE" "$DESTINATION"
+    /usr/bin/rsync -avz "$SOURCE_FILE" "$DESTINATION"
 
     IF_SUCCESS=$?
     if [ $IF_SUCCESS -eq 0 ]; then
