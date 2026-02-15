@@ -4,10 +4,13 @@ services:
   echocron:
     build: .
     container_name: echocron
+    env_file:
+      - .env
+    extra_hosts:
+      - "${PI_NAME}:${PI_IP}"
     volumes:
       - .:/app
       - ./output:/output
-      - ~/.ssh:/root/.ssh:ro
     environment:
       - TZ=America/New_York
     restart: unless-stopped

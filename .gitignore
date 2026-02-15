@@ -9,4 +9,6 @@ supersecrets.py
 .Renviron
 *_cache/
 *_files/
-
+.env
+config
+id_echocron

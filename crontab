@@ -17,3 +17,4 @@ SHELL=/bin/sh
 # |  |  |  |  |
 # *  *  *  *  * user-name command to be executed
   0  5  *  *  * root      /usr/local/bin/python3 /app/scripts/paul_bunyan.py edr_calmake /usr/local/bin/python3 /app/scripts/EDR_CALCREATE2.py
+  0  6  *  *  * root      /usr/local/bin/python3 /app/scripts/paul_bunyan.py edr_calpush /bin/bash              /app/punt_cal.sh
