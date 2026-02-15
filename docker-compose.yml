@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  echocron:
+    build: .
+    container_name: echocron
+    volumes:
+      - .:/app
+      - ./output:/output
+      - ~/.ssh:/root/.ssh:ro
+    environment:
+      - TZ=America/New_York
+    restart: unless-stopped

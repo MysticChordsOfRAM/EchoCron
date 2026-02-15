@@ -1,0 +1,12 @@
+supersecrets.py
+*.ics
+*.db
+*.sqlite
+*.sqlite3
+.Rhistory
+.RData
+.DS_Store
+.Renviron
+*_cache/
+*_files/
+
