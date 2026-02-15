@@ -12,3 +12,4 @@ supersecrets.py
 .env
 config
 id_echocron
+*__pycache__/

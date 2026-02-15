@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   echocron:
     build: .
@@ -8,6 +6,7 @@ services:
       - .env
     extra_hosts:
       - "${PI_NAME}:${PI_IP}"
+      - "host.docker.internal:host-gateway"
     volumes:
       - .:/app
       - ./output:/output
